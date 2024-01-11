@@ -5,11 +5,12 @@
     --gray: #2BBE34;
     --gray-blue: #0D1423;
 
-    --purple: #6F2CFF;
     --light-purple: #EFE9F9;
     --red-heart: ##A50954;
     --blue-heart: #ACD9B2;
-    
+
+    --backgraud-div: #0C151D;
+    --backgraud-section: #171F26;
     --backgraud-pag: #0C151D;
     --clear-grey: #A3ABB2;
     --sm: 14px;
@@ -26,11 +27,6 @@ body {
 
 .main {
     color: var(--white);
-}
-
-
-img{
-    width: 100px;
 }
 
 .perfil {
@@ -51,7 +47,7 @@ img{
     padding: 5px;
     border-radius: 50%;
     background-color: var(--white);
-    border: 5px solid var(--yellow) ;
+    border: 5px solid var(--yellow);
     display: flex;
     justify-content: center
 }
@@ -59,7 +55,8 @@ img{
 .foto-perfil {
     width: 192px;
     height: 192px;
-    border-radius: 50%;;
+    border-radius: 50%;
+    ;
 }
 
 .perfil figure {
@@ -76,7 +73,7 @@ img{
 }
 
 .logo {
-    margin: 0 26px 0 0 ;
+    margin: 0 26px 0 0;
 }
 
 .more-info {
@@ -115,7 +112,7 @@ img{
     color: var(--clear-grey);
 }
 
-.card-container p{
+.card-container p {
     text-align: center;
 }
 
@@ -133,11 +130,14 @@ img{
     width: 290px;
     height: 80px;
     align-content: center;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #push {
     background-color: var(--yellow);
+}
+#push2 {
+    background-color: var(--backgraud-section);
 }
 
 .descarga {
@@ -145,53 +145,33 @@ img{
     height: 20px;
 }
 
-
-
-
-.imagenes-container{
-    width: ;
-}
-/*
-
-.icon-text h2 {
-    font-size: var(--sm);
-    margin: 0;
-}
-
-.icon-text p {
-    font-size: var(--sm);
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    color: var(--clear-grey);
-}
-
-.contenedor {
-    border: 1px solid #000000;
-    padding: 0px;
+.work-container {
+    width: 756px;
+    height: 116px;
     display: flex;
-    justify-content: center;
+    color: var(--clear-grey);
+    background-color: var(--backgraud-section);
 }
 
-h1 {
-    color: #F1F2F4;
-    font-family: Poppins;
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.w-container {
+    width: 350px;
+    height: 80px;
+    text-align: center;
 }
 
+.icons-text{
+    background-color: var(--backgraud-div);
+}
 
-@media (max-width: 720px) {
-    .icons-container {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 50px 10px 50px 10px;
+.imagenes-container .icons-container {
+    display: grid;
+    grid-column: 1fr 1fr;
+    width: 757px;
+    height: 826px;
+}
 
-    }
-
-    .ron-description {
-        display: contents;
-    }
-
-} */
+.imagen {
+    width: 362px;
+    height: 226px;
+    border-radius: 20px;
+}
